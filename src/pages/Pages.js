@@ -1,16 +1,13 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import './App.css';
 import Maincard from './pages/Maincard';
 import Navbar from './Navbar';
-import Accueil from './Accueil';
 
-function App() {
+function Pages() {
   return (
     <>
-    {/* <Navbar/> */}
-
+    <Navbar/>
+    
     <Routes>
-      <Route path="/" element={<Accueil/>} />
       <Route path="/maincard" element={<Maincard/>} />
     </Routes>
 
@@ -20,4 +17,4 @@ function App() {
   );
 }
 
-export default App;
+export default Pages;
